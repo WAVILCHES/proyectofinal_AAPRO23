@@ -1,4 +1,22 @@
-/* Evento onclick para salida del sitio */
+/* Evento onclick para acceder a la página por edad */
+
+function verificarUsuario() {
+  let edad = prompt("Primero decinos, ¿Cuál es tu edad?:");
+
+  if (edad >= 18) {
+    window.location.href = "./pages/home.html";
+  } else {
+    let confirmacion = confirm("El sitio contiene contenido para mayores de 18 años. Podés acceder bajo tu propia responsabilidad.");
+    if (confirmacion) {
+      window.location.href = "./pages/home.html";
+    }
+  }
+}
+
+/* Evento onclick para acceder a la página por edad */
+
+
+/* Evento onclick para salida del sitio a Instragram*/
 
 const enlace = document.getElementById("ig");
   enlace.onclick = function() {
@@ -12,7 +30,11 @@ const enlace = document.getElementById("ig");
     }
     return false;
  }
-  
+
+/* Evento onclick para salida del sitio a Instragram*/
+
+/* Evento onclick para salida del sitio a Facebook */
+
 const enlace2 = document.getElementById("fb");
   enlace2.onclick = function() {
     return confirmarSalidaFb();
@@ -25,6 +47,10 @@ const enlace2 = document.getElementById("fb");
     }
     return false;
  }
+
+/* Evento onclick para salida del sitio a Facebook */
+
+/* Evento onclick para salida del sitio a Youtube */
 
 const enlace3 = document.getElementById("yt");
   enlace3.onclick = function() {
@@ -39,6 +65,9 @@ const enlace3 = document.getElementById("yt");
     return false;
  }
 
+/* Evento onclick para salida del sitio a Youtube */
+
+/* Evento onclick para salida del sitio a chat de WhatsApp */
 const enlace4 = document.getElementById("wa");
   enlace4.onclick = function() {
     return confirmarSalidaWa();
@@ -51,3 +80,5 @@ const enlace4 = document.getElementById("wa");
     }
     return false;
   }
+
+/* Evento onclick para salida del sitio a chat de WhatsApp */
