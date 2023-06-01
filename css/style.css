@@ -1,0 +1,401 @@
+@import url(@media.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* ======= CSS Global ======= */
+
+.bgbody {
+    background-image: linear-gradient(rgba(16,16,16,0.4), rgba(16,16,16,0.8)),url("../img/scalesbg.png");
+    background-size: cover;
+
+}
+
+/* ======= CSS Header ======= */
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background: rgb(227,225,225);
+    background: linear-gradient(32deg, rgba(227,225,225,1) 0%, rgba(199,199,224,1) 33%, rgba(91,100,102,1) 90%);
+}
+
+.encabezado img {
+    width: 20%;
+}
+
+.encabezado h1 {
+    text-shadow: 2px 2px 4px rgb(34, 95, 149);
+
+}
+
+/* ======= CSS Header ======= */
+
+/* ======= CSS Navbar ======= */
+
+.navbar {
+    background: linear-gradient(32deg, rgba(126,222,237,1) 0%, rgba(54,152,236,1) 33%, rgba(16,108,129,1) 90%);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-size: 300% 300%;
+    animation: moveNavbg 6s ease-in-out infinite;
+    z-index: 1000;
+}
+
+.navbar a {
+    margin: 1rem;
+    font-size: 25px;
+    color: #000;
+    text-shadow: 2px 2px 4px rgb(34, 95, 149);
+}
+
+.navbar a:hover {
+    transform: scale(1.2);
+    color: #e0e0e0;
+    text-shadow: 2px 2px 4px #000;
+    transition: all 500ms ease-in-out;
+}
+
+
+@keyframes moveNavbg {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+
+}
+
+/* ======= CSS Navbar ======= */
+
+
+/* ======= CSS Footer ======= */
+
+.redes a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 40px;
+    margin-bottom: 6px;
+    padding: 6px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 2px 2px 4px #050505;
+
+}
+
+.redes a:hover {
+    transform: scale(1.1);
+    transition: all  300ms ease-in-out;
+}
+
+#ig {
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+}
+
+#fb {
+    background: radial-gradient(circle at 33% 100%, #f4f0e7 4%, #8483bf 30%, #524ab4 62%, #2f28c5 85%, #05149a);
+}
+
+#yt {
+    background: radial-gradient(circle at 33% 100%, #f4f0f0 4%, #0e0d0d 30%, #be4e4e 62%, #ba1b1b 85%, #f20808);
+}
+
+/* ======= CSS Footer ======= */
+
+/* ======= CSS Botón WhatsApp ======= */
+
+.botonwa {
+    position: fixed;
+    color: #e0e0e0;
+    background: radial-gradient(circle at 33% 100%, #226f21 4%, #2b8f2c 30%, #259d37 62%, #2ec62b 85%, #3eec17);
+    border-radius: 50%;
+    bottom: 2rem; 
+    right: 2rem; 
+    z-index: 999;
+    text-decoration: none;
+    font-size: 40px;
+    padding: 6px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 45px;
+}
+
+/* ======= CSS Botón WhatsApp ======= */
+
+/* ======= CSS Global ======= */
+
+/* ========================================== */
+
+/* ======= CSS Páginas ======= */
+
+/* ======= CSS Index ======= */
+
+.containerindex {
+    
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .background-index  {
+    background: rgb(14,14,14);
+    background: linear-gradient(32deg, rgba(14,14,14,1) 0%, rgb(14, 115, 131) 33%, rgb(32, 94, 94) 90%);
+    position: relative;
+    background-size: 300% 300%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    animation: moveIndexbg 6s ease-in-out infinite;
+  }
+
+  @keyframes moveIndexbg {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+
+}
+
+.background-index img {
+    width: 82%;
+}
+  
+  .button {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    padding: 10px 20px;
+    background-color: #4f4b4b;
+    color: #000000;
+    font-size: 35px;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+  
+  .button:hover {
+    background-color: #333;
+    color: #e6e7ed;
+    text-shadow: 4px 4px 4px 4px #000000;
+  }
+  
+
+/* ======= CSS Index ======= */
+
+/* ======= CSS Home ======= */
+
+.mainhome {
+    display: flex;
+}
+
+.sechome {
+    flex-direction: column;
+    width: 50%;
+    margin: 6px;
+    padding: 6px;
+}
+
+.sechome h2 {
+    color: #e0e0e0;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.asidehome {
+    width: 50%;
+    margin: 6px;
+    padding: 6px;
+    background: rgba(39, 188, 223, 0.32);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(39, 188, 223, 1);
+
+}
+
+.asidehome h3 {
+    color: #e0e0e0;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.presentacion {
+    color: #e0e0e0;
+    font-size: 24px;
+    padding: 6px;
+    margin: 6px;
+    background: rgba(39, 188, 223, 0.32);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(39, 188, 223, 1);
+}
+
+.objetivos {
+    color: #e0e0e0;
+    font-size: 24px;
+    padding: 6px;
+    margin: 6px;
+    background: rgba(39, 188, 223, 0.32);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(39, 188, 223, 1);
+}
+
+
+.form-check {
+    margin: 10px;
+}
+
+.ytvideo {
+    margin: 10px;
+}
+
+.botones {
+    margin: 10px;
+}
+
+/* ======= CSS Home ======= */
+
+/* ======= CSS Quienes somos ======= */
+
+.listado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.crew h1 {
+    color: #e0e0e0;
+    
+}
+
+
+.listado_integrantes {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    /* From https://css.glass */
+    background: rgba(20, 108, 148, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.6px);
+    -webkit-backdrop-filter: blur(8.6px);
+    border: 1px solid rgba(20, 108, 148, 0.16);
+    list-style: none;
+    color: #e0e0e0;
+    width: 55%;
+
+}
+
+.dossier {
+    list-style: square;
+    font-size: 24px;
+
+}
+
+.listado_derecha img {
+    width: 320px;
+    height: 230px;
+    border-radius: 10px;
+    clip-path: polygon(0 1%, 50% 0%, 100% 100%, 0% 100%);
+          
+}
+ 
+.listado_izquierda img {
+    width: 320px;
+    height: 230px;
+    border-radius: 10px;
+    clip-path: polygon(0 1%, 100% 0%, 100% 100%, 50% 100%);
+    
+}
+
+.listado_derecha img:hover {
+    transform: scale(1.1);
+    transition: all 400ms ease-in-out;
+     
+}
+
+.listado_izquierda img:hover {
+    transform: scale(1.1);
+    transition: all 400ms ease-in-out;
+    
+}
+
+/* ======= CSS Quienes somos ======= */
+
+/* ======= CSS Galería ======= */
+
+#galeria h2 {
+    color: #e0e0e0;
+    text-shadow: 2px 2px 4px #000;
+}
+
+#galeria .col-lg-4 {
+    margin: 0;
+    padding: 25px;
+}
+
+#galeria img {
+    width: 100%;
+    height: 250px;
+}
+
+#galeria img:hover {
+    border: solid 3px #5d9de2;
+    transform: scale(1.5);
+    transition: all 600ms ease-in-out;
+}
+
+/* ======= CSS Galería ======= */
+
+
+/* ======= CSS Contacto ======= */
+
+
+.contactf legend {
+    color: #e0e0e0;
+    
+}
+
+.form-horizontal {
+    padding: 15px;
+}
+
+.form-horizontal i {
+    font-size: 30px;
+    color: #2bee21f0;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+/* ======= CSS Contacto ======= */
+
+
+
+/* ======= CSS Páginas ======= */
